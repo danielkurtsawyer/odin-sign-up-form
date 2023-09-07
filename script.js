@@ -6,7 +6,7 @@ passwordInputs.forEach(input => input.addEventListener('blur', validatePasswordM
 const passwordElements = {...passwordInputs};
 
 function validatePasswordMatches(e){
-    if(passwordElements[0].value === passwordElements[1].value){
+    if(passwordElements[0].value === passwordElements[1].value && passwordElements[0].value !== ''){
         passwordInputs.forEach(input => input.classList.remove('error'));
         passwordMessage.style.display = "none";
     }
