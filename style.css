@@ -1,7 +1,9 @@
 :root{
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: calc(16px + .5vw);
-    line-height: calc(1.1em + 0.5vw);
+}
+p{
+    margin: 0px;
 }
 
 body {
@@ -39,6 +41,10 @@ body {
     padding: 5px;
 }
 
+.italics{
+    font-style: italic;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -47,5 +53,47 @@ body {
 
 .content>div{
     flex: 1;
+    padding: 1rem;
     border: solid black;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: .5rem
+}
+
+.input-row{
+    display: flex;
+    gap: 1rem;
+}
+.input-item{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: .5rem;
+}
+
+input{
+    height:1rem;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+button{
+    width:35%;
+    height: 20%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px lightgray;
 }
