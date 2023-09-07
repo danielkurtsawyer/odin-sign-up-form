@@ -20,7 +20,7 @@ body {
 
 .sidebar{
     flex: 2;
-    background-image: url(/images/nebula.jpeg);
+    background-image: url(images/nebula.jpeg);
     background-position: center;
     background-size: cover;
 }
