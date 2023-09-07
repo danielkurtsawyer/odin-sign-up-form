@@ -1,6 +1,11 @@
 :root{
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: calc(16px + .5vw);
+    color:white;
+
+    --primary-color: #070e13;
+    --secondary-color: hsl(232, 51%, 43%);
+    
 }
 p{
     margin: 0px;
@@ -48,20 +53,20 @@ body {
 .content{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    
 }
 
 .content>div{
     flex: 1;
-    padding: 1rem;
-    border: solid black;
+    padding: 1rem 1rem 1rem 2rem;
 }
 
 .header{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: .5rem
+    gap: .5rem;
+    background-color: var(--primary-color);
 }
 
 .input-row{
@@ -73,27 +78,58 @@ body {
     flex-direction: column;
     width: 40%;
     font-size: .5rem;
+    gap: .25rem
 }
 
 input{
-    height:1rem;
+    height:1.5rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: .75rem;
 }
 
 .signup{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: var(--secondary-color);
 }
 
 .footer{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    background-color: var(--primary-color);
 }
 
 button{
     width:35%;
     height: 20%;
+    min-height: 1rem;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px lightgray;
+    box-shadow: 3px 3px 3px black;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: .75rem;
+    border: none;
 }
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.error{
+    border: 3px solid red;
+}
+
+.error-message{
+    color: #e89e9e;
+    font-style: bold;
+}
+
+input:focus{
+    border: 5px solid #9D44C0;
+    box-shadow: 3px 3px 3px black;
+}
+
