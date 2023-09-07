@@ -1,6 +1,6 @@
 :root{
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: calc(16px + 1vw);
+    font-size: calc(16px + .5vw);
     line-height: calc(1.1em + 0.5vw);
 }
 
@@ -37,4 +37,15 @@ body {
     color: white;
     background-color: rgba(0, 0, 0, .25);
     padding: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.content>div{
+    flex: 1;
+    border: solid black;
 }
